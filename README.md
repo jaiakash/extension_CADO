@@ -8,4 +8,4 @@ CADO name comes from “CApturing information” and “DO something”.
 
 - [x] Keyboard shortcut. (Ctrl + M)
 - [ ] Show dialog to user when screenshot is saved.
-- [ ] Take screenshot of current tab.
+- [x] Take screenshot of current tab.
