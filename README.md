@@ -1,6 +1,7 @@
 # CADO Extension
 
-## What is it ?
+## What is it?
+
 CADO name comes from “CApturing information” and “DO something”.
 
 ## Features

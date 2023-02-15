@@ -4,9 +4,19 @@
   "description": "This extension takes screenshot of the active tab.",
   "version": "1.0.1",
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "icon.png"
+    "default_icon": "icon.png",
+    "default_title": "Take a screen shot!"
   },
+  "content_scripts": [
+    {
+      "js": ["screenshot.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
   "commands": {
     "_execute_action": {
       "suggested_key": {
