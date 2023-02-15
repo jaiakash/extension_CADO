@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "js": ["screenshot.js"],
+      "js": ["scripts/screenshot.js"],
       "matches": ["<all_urls>"]
     }
   ],
