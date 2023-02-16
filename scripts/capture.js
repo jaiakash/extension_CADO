@@ -1,4 +1,3 @@
-console.log("capture.js loaded");
 document.onclick = (e) => {
   // Change the colour of the clicked element
   e.target.style.backgroundColor = "red";
@@ -11,5 +10,5 @@ document.onclick = (e) => {
   localStorage.setItem("Text", text);
 
   // Alert the user that the content has been saved
-  alert("Content has been saved!");
+  // alert("Content has been saved!");
 };
