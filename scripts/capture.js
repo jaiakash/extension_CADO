@@ -16,7 +16,9 @@ function sendTextToOpenAI(text) {
     },
   }).then((response) => {
     response.json().then((data) => {
-      alert(data.choices[0].text);
+      var promptResult = data.choices[0].text;
+      confirm("Prompt Result: " + promptResult);
+      localStorage.setItem("Result", promptResult);
     });
   });
 }
@@ -27,14 +29,23 @@ document.onclick = (e) => {
 
   // Get the text of the clicked element
   const text = e.target.innerHTML;
-  // console.log("Clicked on: ", text);
+  const tag = e.target.tagName;
+  const url = location.href;
+
+  var isSaved = confirm("Save? \n" + text);
+  if (!isSaved) {
+    return;
+  }
 
   // Save the text to localStorage
-  localStorage.setItem("Text", text);
+  localStorage.setItem("Prompt", text);
+  localStorage.setItem("Tag", tag);
+  localStorage.setItem("URL", url);
 
   // Send the text to OpenAI
-  sendTextToOpenAI(text);
-
-  // Alert the user that the content has been saved
-  // alert("Content has been saved!");
+  var chatGPTText = prompt("Do you want to send this to Chat GPT", text);
+  if (chatGPTText == null || chatGPTText == "") {
+    return;
+  }
+  sendTextToOpenAI(chatGPTText);
 };

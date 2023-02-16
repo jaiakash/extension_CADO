@@ -17,14 +17,14 @@ CADO name comes from “CApturing information” and “DO something”.
 
 - [x] On click, text of HTML element is stored in local storage.
 - [ ] Saved data should be shown on popup.
-- [ ] The id of the captured element along with the source URL must be saved
+- [x] The id of the captured element along with the source URL must be saved
 
 ### Display
 
 - [x] After capturing the text from the element, display it to the user for confirmation
 - [ ] Show a list of captured elements on the popover menu. 
 - [ ] Add an option to show captures of the current website only
-- [ ] Show relevant metadata like the timestamp of capture and source URL
+- [x] Show relevant metadata like the timestamp of capture and source URL
 
 ### Do something
 
