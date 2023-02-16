@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "CADO Extension",
-  "description": "This extension takes screenshot of the active tab.",
+  "description": "CADO extension for capturing text and sending it to the chatGPT server",
   "version": "1.0.1",
   "action": {
     "default_icon": "icon.png",
