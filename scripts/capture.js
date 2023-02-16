@@ -1,3 +1,5 @@
-var tmp = 0;
-alert(tmp);
-tmp++;
+console.log("capture.js loaded");
+document.onclick = (e) => {
+  e.target.style.backgroundColor = "red";
+  console.log(e.target.innerHTML);
+};
